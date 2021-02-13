@@ -1,0 +1,14 @@
+C:\Users\John\Source\Repos\MSSQLTest\bin\x64\Release\MSSQLTest.exe.config
+C:\Users\John\Source\Repos\MSSQLTest\bin\x64\Release\MSSQLTest.exe
+C:\Users\John\Source\Repos\MSSQLTest\bin\x64\Release\MSSQLTest.pdb
+C:\Users\John\Source\Repos\MSSQLTest\obj\x64\Release\MSSQLTest.csprojAssemblyReference.cache
+C:\Users\John\Source\Repos\MSSQLTest\obj\x64\Release\MSSQLTest.csproj.CoreCompileInputs.cache
+C:\Users\John\Source\Repos\MSSQLTest\obj\x64\Release\MSSQLTest.exe
+C:\Users\John\Source\Repos\MSSQLTest\obj\x64\Release\MSSQLTest.pdb
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\bin\x64\Release\MSSQLTest.exe.config
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\bin\x64\Release\MSSQLTest.exe
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\bin\x64\Release\MSSQLTest.pdb
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\obj\x64\Release\MSSQLTest.csprojAssemblyReference.cache
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\obj\x64\Release\MSSQLTest.csproj.CoreCompileInputs.cache
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\obj\x64\Release\MSSQLTest.exe
+C:\Users\John\Documents\GitHub\Bypass\MSSQL\MSSQLTest\obj\x64\Release\MSSQLTest.pdb
