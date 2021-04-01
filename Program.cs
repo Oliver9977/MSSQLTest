@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Net;
+using System.Security;
 
 namespace MSSQLTest
 {
@@ -11,10 +13,33 @@ namespace MSSQLTest
 
             //Console.WriteLine("Please enter your Server name ...");
             //String sqlServer = Console.ReadLine();
-            String sqlServer = "[name of your server]";
-            String database = "master";
-            String conString = "Server = " + sqlServer + "; Database = " + database + "; Integrated Security = True;";
+            //[sqlservername, username, password]
+            if (args.Length < 4)
+            {
+                Console.WriteLine("Missing inputs: [sqlservername, authmode, username, password].");
+                return;
+            }
+
+            string sqlServer = args[0];
+            string database = "master";
+            string conString = "Server = " + sqlServer + "; Database = " + database; //"; Integrated Security = False;";
+            
+
+            if (args[1] == "mix")
+            {
+                conString = conString + ";User Id=" + args[2] +  "; Password=" + args[3] + "; Integrated Security = False;";
+            }
+
+            else
+            
+            {
+                conString = conString + "; Integrated Security = True;";
+            }
+
+            Console.WriteLine("conString: " + conString);
+
             SqlConnection con = new SqlConnection(conString);
+
 
             bool issystemadmin = false;
             bool shelldisabled = false;
@@ -291,14 +316,14 @@ namespace MSSQLTest
             }
 
 
-            String dblink_check = "select version from openquery(\"SQL03\", 'select @@version as version')";
-            command = new SqlCommand(dblink_check, con);
-            reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                Console.WriteLine(reader[0]);
-            }
-            reader.Close();
+            //String dblink_check = "select version from openquery(\"SQL03\", 'select @@version as version')";
+            //command = new SqlCommand(dblink_check, con);
+            //reader = command.ExecuteReader();
+            //while (reader.Read())
+            //{
+            //    Console.WriteLine(reader[0]);
+            //}
+            //reader.Close();
 
             //ShowSqlErrorsAndInfo(conString, querycmdshell);
 
